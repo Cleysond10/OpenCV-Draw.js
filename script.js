@@ -18,8 +18,6 @@ imgElement.onload = function () {
   cv.putText(img, text, endPoint, font, 0.7, color, 1)
   // cv.cvtColor(img, img, cv.COLOR_RGB2GRAY)
 
-  console.log('IMG DATA', img.length, img.height, img.width)
-
   cv.imshow(canvasElement, img);
   img.delete();
 };
